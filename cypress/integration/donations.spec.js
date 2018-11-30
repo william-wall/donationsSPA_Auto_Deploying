@@ -26,14 +26,14 @@ describe("Manage Donations page", () => {
   
      });
     
-    it("allows a donation to be deleted", () => {
-        cy.get('tbody').find('tr').should('have.length', 4)
-        // Click trash/delete link of 3rd donation in list
-        cy.get('tbody').find('tr:nth-child(3)').find('td:nth-child(8)').click()
-        // Click confirmation button
-        cy.get('button').contains('Delete').click()
-        cy.get('tbody').find('tr').should('have.length', 3)
-    });
+    // it("allows a donation to be deleted", () => {
+    //     cy.get('tbody').find('tr').should('have.length', 4)
+    //     // Click trash/delete link of 3rd donation in list
+    //     cy.get('tbody').find('tr:nth-child(3)').find('td:nth-child(8)').click()
+    //     // Click confirmation button
+    //     cy.get('button').contains('Delete').click()
+    //     cy.get('tbody').find('tr').should('have.length', 3)
+    // });
 
     // it("shows and hides a donation's message", () => {
     //     // Click + symbol of 2nd donation in list

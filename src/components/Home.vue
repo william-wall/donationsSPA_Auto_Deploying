@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-      <h1 class="vue-title">Homer for President !!</h1>
+      <h1 class="vue-title">Home for President !!</h1>
 
         <table align="center">
           <tr>
