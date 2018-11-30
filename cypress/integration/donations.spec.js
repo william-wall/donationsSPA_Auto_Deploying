@@ -35,12 +35,12 @@ describe("Manage Donations page", () => {
         cy.get('tbody').find('tr').should('have.length', 3)
     });
 
-    it("shows and hides a donation's message", () => {
-        // Click + symbol of 2nd donation in list
-        cy.get('tbody').find('tr:nth-child(2)').find('td:nth-child(1)').click();
-        cy.get('div.vue-message', {timeout: 5000}).should('contain', 'The message is [ Hope this helps')
-        // Unclick same + symbol
-        cy.get('tbody').find('tr:nth-child(2)').find('td:nth-child(1)').click();
-        cy.get('div.vue-message').should('not.exist')
-    });
+    // it("shows and hides a donation's message", () => {
+    //     // Click + symbol of 2nd donation in list
+    //     cy.get('tbody').find('tr:nth-child(2)').find('td:nth-child(1)').click();
+    //     cy.get('div.vue-message', {timeout: 5000}).should('contain', 'The message is [ Hope this helps')
+    //     // Unclick same + symbol
+    //     cy.get('tbody').find('tr:nth-child(2)').find('td:nth-child(1)').click();
+    //     cy.get('div.vue-message').should('not.exist')
+    // });
 })
