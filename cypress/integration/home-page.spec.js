@@ -5,7 +5,7 @@ describe("Home page", () => {
   });
 
   it("Shows a header", () => {
-    cy.get(".vue-title").should('contain','Home for President !!');
+    cy.get(".vue-title").should('contain','Homes for President !!');
   });
 
   describe("Navigation bar", () => {
